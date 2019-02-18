@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # 仅供测试
     @app.route('/')
     def hello():
-        return 'Hello World'  # return时flask会自动封装成一个response对象。
+        return 'Hello World 啊哈哈'  # return时flask会自动封装成一个response对象。
 
     app.run(
         host = app.config['HOST'],

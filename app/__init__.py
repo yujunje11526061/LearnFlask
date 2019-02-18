@@ -7,7 +7,8 @@ from app.web.blueprint import web
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('config')  # 源码显示以此函数导入的配置的键必须全大写
+    app.config.from_object('app.config')  # 源码显示以此函数导入的配置的键必须全大写
+    app.config.from_object('app.secure_setting')
     register_blueprint(app, web)
     return app
 

@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from flask import request, jsonify
+from flask import request, jsonify, make_response
 from app.forms.book import SearchForm
 from app.web.blueprint import web
-from config import URLISBN
-from httptool import HTTP
 from yushubook import YushuBook
-from flask import current_app
 
 
 @web.route('/book/search/<q>/<page>/') # 把视图函数注册到相应蓝图对象
@@ -50,4 +47,4 @@ def search2():
         page = form.page.data
         r = YushuBook.search_by_isbn(q) if YushuBook.is_ISBN(q) else YushuBook.search_by_key(q)
         return jsonify(r)
-    return jsonify({'msg':'parameters are invalid', 'code':400})
+    return jsonify(form.errors)
