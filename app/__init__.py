@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 from flask import Flask
-from app.web.book import web
+from app.web.blueprint import web
 
 
 def create_app():
