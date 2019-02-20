@@ -17,9 +17,22 @@ def create_app():
     app.register_blueprint(web)
 
     # 关联数据库
+    '''
+    源码显示init_app方法传入的参数app不作保存，只是临时用一下
+    create_all方法底层用到了db的get_app方法，由源码知有三种方式获取，
+    1. 作为关键字参数传入
+    2. 通过with语句来执行上下文管理器，使得栈中可以取到current_app,
+    3. db.app = app，把当前得应用实例作为db得实例属性，把当前数据库实例和应用实例绑定
+    '''
     db.init_app(app)
-    db.create_all(app=app) # 把数据模型映射到数据库
-
+    # 1.
+    db.create_all(app=app) # 把数据模型映射到数据库。
+    # 2.
+    # with app.app_context():
+    #     db.create_all()
+    # 3.
+    # db.app=app
+    # db.create_all()
     return app
 
 
