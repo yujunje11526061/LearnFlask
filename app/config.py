@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-HOST = '0.0.0.0'
-PORT = 84
-DEBUG = True
+
 
 # http://t.yushu.im/v2/book/isbn/9787501524044
 URL_ISBN = 'http://t.yushu.im/v2/book/isbn/{}'
