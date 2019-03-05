@@ -2,13 +2,15 @@
 # -*- coding:utf-8 -*-
 
 from flask import Flask
-from app.web.blueprint import web
+from app.web import web
 from app.models.book import db
 
 
 def create_app():
     app = Flask(__name__)
-
+    #__nama__变量代表了应用程序所在位置，相应的属于该应用实例的静态文件与模板文件都应该放在其根目录(默认根目录，可在实例化app时配置关键字参数指定位置。
+    # 注册蓝图时也可以配置属于蓝图的文件下的位置，
+    print("应用程序的根目录是",__name__)
     # 导入自定义配置文件，源码显示以此函数导入的配置的键必须全大写
     app.config.from_object('app.config')
     app.config.from_object('app.secure_setting')

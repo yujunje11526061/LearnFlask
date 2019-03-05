@@ -73,13 +73,13 @@ class _BookViewModel:
         :return:
         '''
         returnedData = {
-            "book": [],
+            "books": [],
             "total": 0,
             "keyword": key,
         }
         if rawData:
             returnedData["total"] = rawData["total"]
-        returnedData["book"] = [cls.__cut_book_data(book) for book in rawData["books"]]
+        returnedData["books"] = [cls.__cut_book_data(book) for book in rawData["books"]]
         return returnedData
 
     @classmethod

@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import json
-from flask import request, jsonify, make_response
+from flask import request, jsonify, make_response, flash, render_template
 from app.forms.book import SearchForm
 from app.view_model.book import BookCollection
-from app.web.blueprint import web
+from app.web import web
 from yushubook import YushuBook
 
 
 @web.route('/book/search/<q>/<page>/')  # 把视图函数注册到相应蓝图对象
-def search(q, page):
+def search_old_version(q, page):
     '''
     :param q: 普通关键字
     :param page:
-    :return:
+    :return: 视图函数必须有返回
     jsonify()函数可将字典封装成response对象
     '''
     r = YushuBook.search_by_isbn(q) if YushuBook.is_ISBN(q) else YushuBook.search_by_key(q)
@@ -35,7 +35,7 @@ def search(q, page):
 #     return jsonify(r)
 
 @web.route('/book/search/')
-def search2():
+def search():
     '''
     ?q={}&page={} 方式传参
     request上下文对象的args属性（MultiDict）来获取参数
@@ -44,6 +44,7 @@ def search2():
     :param page:
     :return:
     '''
+    books = BookCollection()  # 封装了要返回的数据
     # 以参数构建表单对象
     form = SearchForm(request.args)
     # 表单数据合法性验证
@@ -51,7 +52,7 @@ def search2():
         q = form.q.data.strip()
         page = form.page.data
         yushu_book = YushuBook() # 封装了获取原始数据的过程及得到的原始数据
-        books = BookCollection() # 封装了
+
         isbn_or_key = yushu_book.is_ISBN(q)
 
         if isbn_or_key:
@@ -63,7 +64,13 @@ def search2():
         # return jsonify(books.__dict__)
         # flask提供的jsonify只能序列化字典，此处BookCollection对象包括其内聚的BookViewModel对象无法被序列化
         # 故使用原生的json.dumps来序列化books，通过default参数自定义序列化策略，ensure_ascii=False参数使可以显示中文
-        return json.dumps(books, default= lambda x:x.__dict__, ensure_ascii=False)
-
+        # return json.dumps(books, default= lambda x:x.__dict__, ensure_ascii=False)
     else:
-        return jsonify(form.errors)
+        flash("未输入有效关键字，请重新输入")
+        # return jsonify(form.errors)
+    return render_template("search_result.html", books = books)
+
+
+@web.route('/book/<isbn>/detail')
+def book_detail(isbn):
+    pass

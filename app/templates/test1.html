@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {{ super() }}
+    {# 用关键字参数的参数名.属性名 来取数据 #}
+    {% if data.age==18 %}
+        {# 不存在的字段就用默认值填充 #}
+        {# | 后面跟过滤器，像管道一样把前面的结果往后传递 #}
+        {{ data.name | default("unnamed") | length()}}
+        {{ data.school | default("None")}}
+        {%  with messages = get_flashed_messages() %} {# with 语句块可以缩小变量作用域 #}
+            {{ messages }}
+        {% endwith %}
+    {% else %}
+        abc
+    {% endif %}
+{% endblock %}

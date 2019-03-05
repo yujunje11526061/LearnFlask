@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    {# 利用视图函数的endpoint反向找到对应的url，static文件本质上也是通过url->endpoint->视图函数找到的，该endpoint默认名为static，对应的视图函数框架已经生成 #}
+    {# 静态文件的加载尽量都用url_for函数来定位，更稳定 #}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'test.css') }}">
+</head>
+<body>
+    {# 一个block中定义的变量作用域仅在该block中 #}
+    {% block head %}
+        <div>This is head</div>
+    {% endblock %}
+
+    {% block content %}
+        <div>This is content</div>
+    {% endblock %}
+
+    {% block foot %}
+        <div>This is foot</div>
+    {% endblock %}
+</body>
+</html>

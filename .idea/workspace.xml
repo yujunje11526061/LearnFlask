@@ -2,11 +2,476 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f59d15-0550-467d-b915-e153f9a1d894" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/flat-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/jquery.twbsPagination.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/remodal.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/bootflat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/bootstrap.min.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/flat-ui-ok.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/flat-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/flat-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/remodal-default-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/remodal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/ui/site.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/3rd/validator.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/book-detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/drift.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/normal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/not-enough.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/pending.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/personal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/search-result.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/fish1@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/fish2@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/fish3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/fish@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/flow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/gift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/gift@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/gift@subnav1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/gift@subnav111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/logo-yushu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/upload111@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/upload@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/upload@subnav111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/wish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/wish1111@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/wish1@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/wish@subnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/book-detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/drift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/gifts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/register.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/search_result.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/base.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/book-detail.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/drift.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/gifts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/login.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/normal.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/not_enough.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/pending.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/personal.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/less/search-result.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/README.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/_config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/angularicons/angularicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/angularicons/angularicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/angularicons/angularicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/angularicons/angularicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/css/bootflat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/css/bootflat.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/css/bootflat.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/img/check_flat/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/img/check_flat/default.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/js/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/js/jquery.fs.selecter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/js/jquery.fs.stepper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/.csscomb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/.csslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_accordion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_button_group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_calendar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_checkbox_radio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_label_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_media_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_pager.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_panel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_pill.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_pricing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_selecter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_stepper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_tab.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_thumbnail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_timeline.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_toggle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bootflat/scss/bootflat/_well.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-blue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-gray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-green.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-pink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-purple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-red.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker-yellow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/color-picker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/css/site.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/documentation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/favicon_16.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/free-psd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/getting-started.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/google45b338b882fada75.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/Jumbotron.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/ascii-logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/bootflat-ui-kit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/divider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/fast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/feature-bootstrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/feature-css.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/feature-lightweight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/feature-mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/footer-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/logo-index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/photo-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/photo-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/photo-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/photo-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/prototyping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/share.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/slider2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/slider3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/thumbnail-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/thumbnail-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/thumbnail-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/thumbnail-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/together.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/img/wild_flowers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/jquery-1.10.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/site.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/js/site.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/bootflat/sitemap.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/css/flat-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/css/mixins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/css/spaces.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/css/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/css/docs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/css/prettyprint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/demo.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/docs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/docs.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/src/demo.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/src/docs.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/css/src/prettyprint.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-pic-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-pic-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-pic-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-pic-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-pic-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser-pic-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/browser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/html-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/logo-mask-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/logo-mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/demo/video.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/example-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/footer/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/getting-started/icomoon_import.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/img/video/poster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/js/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/assets/js/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/components.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/dropdowns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/forms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/navbar-fixed-top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/navbar-static-top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/navbars-with-elements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/navbars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/radiocheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/select.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/switches.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/tagsinput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/thumbnails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/tiles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/todo-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/tooltips.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/typography.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/examples/vertical-slider.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/getting-started.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/docs/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/glyphicons/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/glyphicons/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/glyphicons/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/glyphicons/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/glyphicons/selection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bolditalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bolditalic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bolditalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-bolditalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/fonts/lato/lato-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Clipboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Compas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Gift-Box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Infinity-Loop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Pensils.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Pocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Retina-Ready.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Toilet-Paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/png/Watches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/clocks.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/compas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/gift-box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/loop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/paper-bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/pencils.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/retina.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/ribbon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/icons/svg/toilet-paper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/login/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/login/imac-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/login/imac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/tile/ribbon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/img/tile/ribbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/js/.jscs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/js/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/js/radiocheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/.csscomb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/.csslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/background-clip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/background-variant.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/border-radius.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/center-block.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/clearfix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/gradients.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/hide-text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/nav-divider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/navbar-vertical-align.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/opacity.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/pallets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/reset-filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/resize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/responsive-visibility.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/size.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/switches.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/tab-focus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/text-emphasis.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/text-overflow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/css/vendor-prefixes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/flat-ui.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/background-clip.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/background-variant.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/border-radius.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/buttons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/center-block.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/clearfix.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/forms.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/gradients.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/hide-text.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/image.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/nav-divider.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/navbar-vertical-align.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/opacity.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/pagination.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/pallets.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/reset-filter.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/resize.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/responsive-visibility.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/select.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/size.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/switches.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/tab-focus.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/text-emphasis.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/text-overflow.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/mixins/vendor-prefixes.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/button-groups.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/buttons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/code.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/dropdowns.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/footer.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/forms.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/glyphicons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/input-groups.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/local-fonts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/login.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/navbar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/pager.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/pagination.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/palette.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/print.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/progress-bars.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/radiocheck.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/scaffolding.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/select.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/share.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/slider.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/switch.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/tagsinput.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/thumbnails.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/tiles.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/todo-list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/tooltip.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/type.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/typeahead.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/modules/video.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/spaces.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/flat/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/glyphicons/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/glyphicons/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/glyphicons/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/glyphicons/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/glyphicons/selection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bolditalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bolditalic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bolditalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-bolditalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/temp/fonts/lato/lato-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/auth/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/auth/forget_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/auth/forget_password_request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/auth/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/drift.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/email/get_gift.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/email/reset_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/email/satisify_wish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/email_has_send.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/gifts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/my_gifts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/my_wish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/not_enough_beans.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/pending.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/personal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/search_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/web/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/web/drift.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/web/gift.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/web/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/web/wish.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms/book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view_model/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view_model/book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/blueprint.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yushubook.py" beforeDir="false" afterPath="$PROJECT_DIR$/yushubook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,28 +504,34 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Pipfile" value="1" />
+          <entry key="css" value="1" />
+          <entry key="html" value="6" />
           <entry key="lock" value="1" />
-          <entry key="py" value="110" />
+          <entry key="py" value="138" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="6" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="110" />
+          <entry key="Python" value="138" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="45" />
-          <entry key="dummy" value="8" />
-          <entry key="py" value="10706" />
-          <entry key="txt" value="511" />
+          <entry key="dummy" value="19" />
+          <entry key="html" value="833" />
+          <entry key="py" value="11365" />
+          <entry key="txt" value="543" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="519" />
-          <entry key="Python" value="10751" />
+          <entry key="HTML" value="833" />
+          <entry key="PLAIN_TEXT" value="562" />
+          <entry key="Python" value="11410" />
         </counts>
       </usages-collector>
     </session>
@@ -69,109 +540,94 @@
     <favorites_list name="LearnFlask" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/forms/book.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#46#97#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/web/book.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#45#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/httptool.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yushubook.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/view_model/book.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
-                  <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/config.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="3" selection-start-line="3" selection-end-line="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/__init__.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/view_model/book.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-220">
-                  <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/test1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/web/book.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+              <folding>
+                <element signature="e#45#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view_model/book.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/search_result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/web/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="78" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -197,23 +653,28 @@
       <list>
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/app/web/blueprint.py" />
-        <option value="$PROJECT_DIR$/app/web/__init__.py" />
         <option value="$PROJECT_DIR$/yushu_book.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/forms.py" />
         <option value="$PROJECT_DIR$/httptool.py" />
         <option value="$PROJECT_DIR$/app/config.py" />
         <option value="$PROJECT_DIR$/app/models/book.py" />
-        <option value="$PROJECT_DIR$/app/secure_setting.py" />
         <option value="$PROJECT_DIR$/test/test1.py" />
-        <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/test/test2.py" />
         <option value="$PROJECT_DIR$/test/flask框架封装情况梳理.py" />
-        <option value="$PROJECT_DIR$/app/view_model/book.py" />
         <option value="$PROJECT_DIR$/yushubook.py" />
         <option value="$PROJECT_DIR$/app/forms/book.py" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/app/static/test.css" />
+        <option value="$PROJECT_DIR$/app/secure_setting.py" />
+        <option value="$PROJECT_DIR$/app/templates/layout.html" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/app/web/blueprint.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/app/web/__init__.py" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/view_model/book.py" />
+        <option value="$PROJECT_DIR$/app/templates/test1.html" />
         <option value="$PROJECT_DIR$/app/web/book.py" />
       </list>
     </option>
@@ -223,6 +684,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/app/static/temp/bootflat/package.json" />
+      <path value="$PROJECT_DIR$/app/static/temp/flat/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-2163" />
@@ -267,13 +734,7 @@
               <item name="LearnFlask" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnFlask" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearnFlask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearnFlask" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearnFlask" type="b2602c69:ProjectViewProjectNode" />
@@ -294,12 +755,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/jjff1/.PyCharm2018.2/system/python_stubs/1742754360/_thread.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Django/Jinja2 Template" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -393,7 +856,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -527,7 +990,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551776608500</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="对视图模型进行重构，使之更符合OOP思想">
+      <created>1551782238685</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551782238685</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -535,7 +1005,7 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5262411" visible="true" weight="0.122654155" />
-      <window_info id="Structure" order="1" sideWeight="0.47375888" side_tool="true" visible="true" weight="0.122654155" />
+      <window_info id="Structure" order="1" sideWeight="0.47375888" side_tool="true" weight="0.122654155" />
       <window_info id="Favorites" order="2" sideWeight="0.5005066" side_tool="true" weight="0.23325635" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -603,7 +1073,8 @@
     <MESSAGE value="了解werkzeug的线程隔离机制。" />
     <MESSAGE value="flask线程隔离含义，线程隔离栈的意义，及封装过程梳理" />
     <MESSAGE value="建立book的视图模型，统一数据返回格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="建立book的视图模型，统一数据返回格式" />
+    <MESSAGE value="对视图模型进行重构，使之更符合OOP思想" />
+    <option name="LAST_COMMIT_MESSAGE" value="对视图模型进行重构，使之更符合OOP思想" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -637,19 +1108,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/LearnFlask-Acwhpozw/Lib/site-packages/werkzeug/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="398" column="4" selection-start-line="398" selection-start-column="4" selection-end-line="398" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/LearnFlask-Acwhpozw/Lib/site-packages/flask/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -675,20 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="766" selection-start-line="766" selection-end-line="766" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/blueprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -768,13 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/secure_setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1742754360/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
@@ -803,20 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/flask框架封装情况梳理.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/LearnFlask-Acwhpozw/Lib/site-packages/flask/globals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -834,41 +1257,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -879,13 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/httptool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Professional Software/Python37/Lib/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
@@ -893,23 +1278,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view_model/book.py">
+    <entry file="file://$PROJECT_DIR$/test/flask框架封装情况梳理.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yushubook.py">
+    <entry file="file://$PROJECT_DIR$/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="640">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/httptool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/test.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#45#91#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/forms/book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="240">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="e#46#97#0" expanded="true" />
@@ -917,10 +1332,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yushubook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/secure_setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view_model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/search_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/drift.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/blueprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/gift.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view_model/book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/LearnFlask-Acwhpozw/Lib/site-packages/flask/templating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/web/book.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state relative-caret-position="275">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
           <folding>
             <element signature="e#45#56#0" expanded="true" />
           </folding>
