@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 from flask import request, jsonify, make_response
 from app.forms.book import SearchForm
+from app.view_model.book import BookViewModel
 from app.web.blueprint import web
 from yushubook import YushuBook
 
@@ -45,6 +46,13 @@ def search2():
     if form.validate():
         q = form.q.data.strip()
         page = form.page.data
-        r = YushuBook.search_by_isbn(q) if YushuBook.is_ISBN(q) else YushuBook.search_by_key(q)
+        isbn_or_key = YushuBook.is_ISBN(q)
+        if isbn_or_key:
+            r = YushuBook.search_by_isbn(q)
+            r = BookViewModel.package_single(r, q)
+        else:
+            r = YushuBook.search_by_key(q, page)
+            r = BookViewModel.package_collection(r, q)
         return jsonify(r)
-    return jsonify(form.errors)
+    else:
+        return jsonify(form.errors)
