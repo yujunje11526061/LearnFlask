@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+import json
 from flask import request, jsonify, make_response
 from app.forms.book import SearchForm
-from app.view_model.book import BookViewModel
+from app.view_model.book import BookCollection
 from app.web.blueprint import web
 from yushubook import YushuBook
 
 
-@web.route('/book/search/<q>/<page>/') # 把视图函数注册到相应蓝图对象
+@web.route('/book/search/<q>/<page>/')  # 把视图函数注册到相应蓝图对象
 def search(q, page):
     '''
     :param q: 普通关键字
@@ -17,6 +18,7 @@ def search(q, page):
     '''
     r = YushuBook.search_by_isbn(q) if YushuBook.is_ISBN(q) else YushuBook.search_by_key(q)
     return jsonify(r)
+
 
 # @web.route('/book/search/')
 # def search2():
@@ -42,17 +44,26 @@ def search2():
     :param page:
     :return:
     '''
+    # 以参数构建表单对象
     form = SearchForm(request.args)
+    # 表单数据合法性验证
     if form.validate():
         q = form.q.data.strip()
         page = form.page.data
-        isbn_or_key = YushuBook.is_ISBN(q)
+        yushu_book = YushuBook() # 封装了获取原始数据的过程及得到的原始数据
+        books = BookCollection() # 封装了
+        isbn_or_key = yushu_book.is_ISBN(q)
+
         if isbn_or_key:
-            r = YushuBook.search_by_isbn(q)
-            r = BookViewModel.package_single(r, q)
+            yushu_book.search_by_isbn(q)
         else:
-            r = YushuBook.search_by_key(q, page)
-            r = BookViewModel.package_collection(r, q)
-        return jsonify(r)
+            yushu_book.search_by_key(q, page)
+
+        books.fill(yushu_book,q)
+        # return jsonify(books.__dict__)
+        # flask提供的jsonify只能序列化字典，此处BookCollection对象包括其内聚的BookViewModel对象无法被序列化
+        # 故使用原生的json.dumps来序列化books，通过default参数自定义序列化策略，ensure_ascii=False参数使可以显示中文
+        return json.dumps(books, default= lambda x:x.__dict__, ensure_ascii=False)
+
     else:
         return jsonify(form.errors)

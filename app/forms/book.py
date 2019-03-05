@@ -9,6 +9,9 @@ Form类类似Scrapy的Item类，字段定义也类似, 可以在字段构造函�
 '''
 
 class SearchForm(Form):
+    '''
+    定义search视图函数接收到的表单应有的形式
+    '''
     q = StringField(validators = [DataRequired(), Length(min = 1, max=30)])
     page = IntegerField(validators = [NumberRange(min=1, max= 99)], default=1)
 

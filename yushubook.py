@@ -6,9 +6,12 @@ from httptool import HTTP
 
 
 class YushuBook:
+    
+    def __init__(self):
+        self.total = 0
+        self.books = []
 
-    @classmethod
-    def is_ISBN(cls, q: str):
+    def is_ISBN(self, q: str):
         if len(q) == 13 and q.isdigit():
             return True
         short_q = q.replace('-', '')
@@ -16,16 +19,23 @@ class YushuBook:
             return True
         return False
 
-    @classmethod
-    def search_by_isbn(cls, isbn):
+    def search_by_isbn(self, isbn):
         r = HTTP.get(current_app.config['URL_ISBN'].format(isbn), return_json=True)
-        return r
+        self.__fill_single(r)
 
-    @classmethod
-    def search_by_key(cls, q, page=1):
-        r = HTTP.get(current_app.config['URL_KEY'].format(q, current_app.config['PER_PAGE'], cls.calculate_start(page)), return_json=True)
-        return r
 
-    @classmethod
-    def calculate_start(cls, page):
+    def search_by_key(self, q, page=1):
+        r = HTTP.get(current_app.config['URL_KEY'].format(q, current_app.config['PER_PAGE'], self.calculate_start(page)), return_json=True)
+        self.__fill_collection(r)
+
+    def __fill_single(self,data:dict):
+        if data:
+            self.total = 1
+            self.books = [data]
+
+    def __fill_collection(self,data:dict):
+        self.total = data.get("total",0)
+        self.books = data.get("books",[])
+
+    def calculate_start(self, page):
         return (page - 1) * current_app.config['PER_PAGE']

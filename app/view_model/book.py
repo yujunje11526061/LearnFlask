@@ -1,10 +1,51 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+from yushubook import YushuBook
 
-class BookViewModel:
+
+class BookViewModel():
+    '''
+    定义单本书所需要的字段
+    '''
+    def __init__(self, book:dict):
+        self.title = book.get("title", 0)
+        self.publisher =  book.get("publisher", "")
+        self.pages = book.get("pages", "")
+        self.author =  "--".join(
+            book.get("author", []))
+        self.price = book.get("price", "")
+        self.summary =  book.get("summary", "")
+        self.image = book.get("image", "")
+
+class BookCollection():
+    '''
+    定义多本书构成的信息
+    '''
+    def __init__(self):
+        self.total = 0
+        self.keyword = ''
+        self.books = []
+
+    def fill(self,yushu_book:YushuBook,keyword:str):
+        '''
+        此方法用于讲API中获取的原始数据进行清洗整合
+        :param yushu_book:该对象封装了从API获取的原始数据
+        :param key:
+        :return:
+        '''
+        self.keyword = keyword
+        self.total = yushu_book.total
+        # self.books = [BookViewModel(book).__dict__ for book in yushu_book.books]
+        self.books = [BookViewModel(book) for book in yushu_book.books]
+
+@DeprecationWarning
+class _BookViewModel:
     '''
     此类用于对API返回的数据加以修改整合，使得isbn搜索和关键字搜索返回得数据具有统一格式
+
+    不具备面向对象的特征，用BookViewModel和BookCollection重构
     '''
+
     @classmethod
     def package_single(cls, rawData:dict, key:str)->dict:
         '''
@@ -49,12 +90,12 @@ class BookViewModel:
         :return:
         '''
         book = {
-            "title":data["title"],
-            "publisher":data["publisher"],
-            "pages":data["pages"] or "",
-            "author":"--".join(data["author"]), # 通过模板渲染的方式得到页面则直接将数据在服务端处理完再填进去比较好。若是前后端分离，则提供列表供客户端去决定需要呈现的方式更好，更灵活。
-            "price":data["price"],
-            "summary":data["summary"] or "",
-            "image":data["image"],
+            "title":data.get("title",0),
+            "publisher":data.get("publisher",""),
+            "pages":data.get("pages",""),
+            "author":"--".join(data.get("author",[])), # 通过模板渲染的方式得到页面则直接将数据在服务端处理完再填进去比较好。若是前后端分离，则提供列表供客户端去决定需要呈现的方式更好，更灵活。
+            "price":data.get("price",""),
+            "summary":data.get("summary", ""),
+            "image":data.get("image",""),
         }
         return book
