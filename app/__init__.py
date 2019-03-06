@@ -2,8 +2,13 @@
 # -*- coding:utf-8 -*-
 
 from flask import Flask
+from flask_login  import LoginManager
+
+login_manager = LoginManager()
+
 from app.web import web
 from app.models.base import db
+
 
 
 def create_app():
@@ -27,6 +32,7 @@ def create_app():
     3. db.app = app，把当前得应用实例作为db得实例属性，把当前数据库实例和应用实例绑定。或直接在db实例化时把应用实例app作为参数传入，这将直接绑定。
     '''
     db.init_app(app)
+    # db.drop_all(app=app)
     # 1.
     db.create_all(app=app) # 把数据模型映射到数据库。
     # 2.
@@ -35,6 +41,11 @@ def create_app():
     # 3.
     # db.app=app
     # db.create_all()
+
+    login_manager.init_app(app)
+    login_manager.login_view = "web.login" # 把登陆页面的endpoint赋值过去，用于访问权限审核不通过时重定向到登陆页面
+    login_manager.login_message = "请先登陆"
+
     return app
 
 

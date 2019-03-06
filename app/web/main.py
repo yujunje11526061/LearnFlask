@@ -1,12 +1,12 @@
 from . import web
 
 
-__author__ = '七月'
+
 
 
 @web.route('/')
 def index():
-    pass
+    return "11111"
 
 
 @web.route('/personal')

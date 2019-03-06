@@ -1,11 +1,12 @@
 
 from . import web
-__author__ = '七月'
+from flask_login import login_required
 
 
 @web.route('/my/gifts')
+@login_required # 插件flask_login插件提供的验证是否登陆的装饰器
 def my_gifts():
-    pass
+    return "my gifts"
 
 
 @web.route('/gifts/book/<isbn>')

@@ -13,12 +13,12 @@ class Base(db.Model):
     # status 字段定义是否删除了，这是一种软删除形式。，当删除行为发生时，更改为删除状态，但是保留历史记录。物理删除即直接删除数据，这样会丢失历史纪录
     status = Column(SmallInteger, default=1)
 
-    def set_attr(self, form:dict):
+    def set_attr(self, data:dict):
         '''
         将提交的表单数据复制到实例对象的同名属性下
         :param form:
         :return:
         '''
-        for key, val in form.items():
+        for key, val in data.items():
             if hasattr(self, key) and key != "id":
                 setattr(self, key, val)
