@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 from sqlalchemy import Column, Integer, String
-from flask_sqlalchemy import SQLAlchemy # 从flask封装的sqlalchemy中导入SQLAlchemy类
+
+from app.models.base import Base
 
 
-db = SQLAlchemy()
-
-class book(db.Model):
+class book(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String(50), nullable=False)
     author = Column(String(30), default='未名')

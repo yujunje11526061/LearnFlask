@@ -39,3 +39,7 @@ class YushuBook:
 
     def calculate_start(self, page):
         return (page - 1) * current_app.config['PER_PAGE']
+
+    @property
+    def first(self):
+        return self.books[0] if len(self.books)>0 else None

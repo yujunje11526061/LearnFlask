@@ -3,7 +3,7 @@
 import json
 from flask import request, jsonify, make_response, flash, render_template
 from app.forms.book import SearchForm
-from app.view_model.book import BookCollection
+from app.view_model.book import BookCollection, BookViewModel
 from app.web import web
 from yushubook import YushuBook
 
@@ -73,4 +73,7 @@ def search():
 
 @web.route('/book/<isbn>/detail')
 def book_detail(isbn):
-    pass
+    yushu_book = YushuBook()
+    yushu_book.search_by_isbn(isbn)
+    book = BookViewModel(yushu_book.first)
+    return render_template("book_detail.html", book=book, wishes = [], gifts = [])

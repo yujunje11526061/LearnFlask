@@ -3,7 +3,7 @@
 
 from flask import Flask
 from app.web import web
-from app.models.book import db
+from app.models.base import db
 
 
 def create_app():
@@ -24,7 +24,7 @@ def create_app():
     create_all方法底层用到了db的get_app方法，由源码知有三种方式获取，
     1. 作为关键字参数传入
     2. 通过with语句来执行上下文管理器，使得栈中可以取到current_app,
-    3. db.app = app，把当前得应用实例作为db得实例属性，把当前数据库实例和应用实例绑定
+    3. db.app = app，把当前得应用实例作为db得实例属性，把当前数据库实例和应用实例绑定。或直接在db实例化时把应用实例app作为参数传入，这将直接绑定。
     '''
     db.init_app(app)
     # 1.

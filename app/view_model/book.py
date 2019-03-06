@@ -14,8 +14,14 @@ class BookViewModel():
         self.author =  "--".join(
             book.get("author", []))
         self.price = book.get("price", "")
-        self.summary =  book.get("summary", "")
+        self.summary = book.get("summary", "").replace("\\n","\n")
         self.image = book.get("image", "")
+        self.isbn = book.get("isbn", "")
+
+    @property
+    def into(self):
+        intros = filter(lambda x: True if x else False, [self.author, self.publisher, self.price])
+        return "/".join(intros)
 
 class BookCollection():
     '''
