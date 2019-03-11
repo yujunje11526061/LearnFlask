@@ -42,10 +42,26 @@ class MyResource():
 def test_with():
     try:
         with MyResource() as resource:
-            1/0
+            # 1/0
             resource.query()
     except Exception as e:
         print(e)
 
 # test_context()
 test_with()
+
+class MyResource2():
+    def query(self):
+        print("query data")
+
+from contextlib import contextmanager
+# 利用上下文管理器，装饰一个封装了资源连接，操作与断开过程的生成器，来实现上下文管理，从而使得资源本身不需要实现__enter__和__exit__方法
+# 通常用于将别人写的类包装为上下文管理器，修改别人的类不合适。
+@contextmanager
+def make_resource_query():
+    print("Connect resource") # __enter__方法的内容
+    yield MyResource2() # 操作资源。 yield也可以不返回东西，这样with as后面得到的是None，但是可以在with语句中实现资源的完整操作。故yield实质上只是起到悬停的作用。
+    print("Disconnect resource") # __exit__方法的内容
+
+with make_resource_query() as r:
+    r.query()

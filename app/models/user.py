@@ -6,6 +6,9 @@ from flask_login import UserMixin
 
 from app import login_manager
 from app.models.base import Base
+from app.models.gift import Gift
+from app.models.wish import Wish
+from yushubook import YushuBook
 
 
 class User(Base, UserMixin):
@@ -46,6 +49,23 @@ class User(Base, UserMixin):
 
     def check_password(self,raw_password:str):
         return check_password_hash(self.password, raw_password)
+
+    def can_save_to_gift_list(self, isbn):
+        yushu_book = YushuBook()
+        if not yushu_book.is_ISBN(isbn):
+            return False
+        yushu_book.search_by_isbn(isbn)
+        if yushu_book.first is None:
+            return False
+        # 同样得的书不能既想要又想送
+        wishing =  Wish.query.filter_by(uid = self.id, isbn = isbn, launched = False).first()
+        # 未发布前，不能重复添加多本同样的书。
+        gifting = Gift.query.filter_by(uid= self.id, isbn = isbn, launched = False).first()
+        if wishing is None and gifting is None:
+            return True
+        else:
+            return False
+
 
 @login_manager.user_loader
 def get_user(uid):

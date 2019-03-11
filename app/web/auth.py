@@ -14,12 +14,14 @@ from werkzeug.security import generate_password_hash
 def register():
     form = RegisterForm(request.form)
     if request.method == "POST" and form.validate():
-        user = User()
-        user.set_attr(form.data)
-        db.session.add(user)
-        db.session.commit()
+        with db.auto_commit(): # 由上下文管理函数来封装提交与回滚的 try  except  代码块。
+            user = User()
+            user.set_attr(form.data)
+            db.session.add(user)
+
         return redirect(url_for("web.login"))
-    return render_template("auth/register.html", form = form)
+    else:
+        return render_template("auth/register.html", form = form)
 
 
 

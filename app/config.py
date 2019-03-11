@@ -12,3 +12,4 @@ PER_PAGE = 15
 # 或用json.dumps(mydict, ensure_ascii = False)
 # 对于安装了JSONView插件的谷歌浏览器不影响吗，会自动呈现合适的形式。
 JSON_AS_ASCII = False
+BEAN_GIVEN_BY_SYSTEM_PER_BOOK = 0.5
