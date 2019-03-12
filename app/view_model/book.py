@@ -10,10 +10,12 @@ class BookViewModel():
     def __init__(self, book:dict):
         self.title = book.get("title", 0)
         self.publisher =  book.get("publisher", "")
+        self.pubdate = book.get("pubdate","")
         self.pages = book.get("pages", "")
         self.author =  "--".join(
             book.get("author", []))
         self.price = book.get("price", "")
+        self.binding = book.get("binding","")
         self.summary = book.get("summary", "").replace("\\n","\n")
         self.image = book.get("image", "")
         self.isbn = book.get("isbn", "")

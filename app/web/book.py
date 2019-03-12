@@ -2,8 +2,13 @@
 # -*- coding:utf-8 -*-
 import json
 from flask import request, jsonify, make_response, flash, render_template
+from flask_login import current_user
+
 from app.forms.book import SearchForm
+from app.models.gift import Gift
+from app.models.wish import Wish
 from app.view_model.book import BookCollection, BookViewModel
+from app.view_model.trade import TradeInfo
 from app.web import web
 from yushubook import YushuBook
 
@@ -73,7 +78,17 @@ def search():
 
 @web.route('/book/<isbn>/detail')
 def book_detail(isbn):
+    is_in_wish = False
+    is_in_gift = False
+
     yushu_book = YushuBook()
     yushu_book.search_by_isbn(isbn)
     book = BookViewModel(yushu_book.first)
-    return render_template("book_detail.html", book=book, wishes = [], gifts = [])
+    trade_wish = TradeInfo(Wish.query.filter_by(isbn=isbn, acquired = False).all())
+    trade_gift = TradeInfo(Gift.query.filter_by(isbn=isbn, launched = False).all())
+    if current_user.is_authenticated:
+        is_in_wish = bool(Wish.query.filter_by(isbn=isbn,id=current_user.id, acquired=False).first())
+        is_in_gift = bool(Gift.query.filter_by(isbn=isbn,id=current_user.id, launched=False).first())
+
+    return render_template("book_detail.html", book=book, wishes = trade_wish, gifts = trade_gift,
+                           has_in_gifts = is_in_gift, has_in_wishes = is_in_wish)

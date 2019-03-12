@@ -10,10 +10,10 @@ flask = "*"
 requests = "*"
 wtforms = "*"
 flask-sqlalchemy = "*"
-flask-wtforms = "*"
 cymysql = "*"
-flask-wtf = "*"
 flask-login = "*"
+pycrypto = "*"
+pycryptodome = "*"
 
 [requires]
 python_version = "3.7"

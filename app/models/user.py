@@ -57,10 +57,26 @@ class User(Base, UserMixin):
         yushu_book.search_by_isbn(isbn)
         if yushu_book.first is None:
             return False
-        # 同样得的书不能既想要又想送
-        wishing =  Wish.query.filter_by(uid = self.id, isbn = isbn, launched = False).first()
-        # 未发布前，不能重复添加多本同样的书。
+        # 同样的书不能在正想要的时候还想送
+        wishing =  Wish.query.filter_by(uid = self.id, isbn = isbn, acquired = False).first()
+        # 未送出去前，不能重复添加多本同样的书。
         gifting = Gift.query.filter_by(uid= self.id, isbn = isbn, launched = False).first()
+        if wishing is None and gifting is None:
+            return True
+        else:
+            return False
+
+    def can_save_to_wish_list(self, isbn):
+        yushu_book = YushuBook()
+        if not yushu_book.is_ISBN(isbn):
+            return False
+        yushu_book.search_by_isbn(isbn)
+        if yushu_book.first is None:
+            return False
+        # 同样的书不能正在送的时候还有想要
+        gifting =  Gift.query.filter_by(uid = self.id, isbn = isbn, launched = False).first()
+        # 还没收到时，不能重复添加多本同样的书。
+        wishing = Wish.query.filter_by(uid= self.id, isbn = isbn, acquired = False).first()
         if wishing is None and gifting is None:
             return True
         else:

@@ -13,3 +13,4 @@ PER_PAGE = 15
 # 对于安装了JSONView插件的谷歌浏览器不影响吗，会自动呈现合适的形式。
 JSON_AS_ASCII = False
 BEAN_GIVEN_BY_SYSTEM_PER_BOOK = 0.5
+BOOK_NUMBER_IN_HOMEPAGE = 30
