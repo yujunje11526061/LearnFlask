@@ -87,8 +87,7 @@ def book_detail(isbn):
     trade_wish = TradeInfo(Wish.query.filter_by(isbn=isbn, acquired = False).all())
     trade_gift = TradeInfo(Gift.query.filter_by(isbn=isbn, launched = False).all())
     if current_user.is_authenticated:
-        is_in_wish = bool(Wish.query.filter_by(isbn=isbn,id=current_user.id, acquired=False).first())
-        is_in_gift = bool(Gift.query.filter_by(isbn=isbn,id=current_user.id, launched=False).first())
+        is_in_wish = bool(Wish.query.filter_by(isbn=isbn,uid=current_user.id, acquired=False).first())
+        is_in_gift = bool(Gift.query.filter_by(isbn=isbn,uid=current_user.id, launched=False).first())
 
-    return render_template("book_detail.html", book=book, wishes = trade_wish, gifts = trade_gift,
-                           has_in_gifts = is_in_gift, has_in_wishes = is_in_wish)
+    return render_template("book_detail.html", book=book, wishes = trade_wish, gifts = trade_gift, has_in_gifts = is_in_gift, has_in_wishes = is_in_wish)

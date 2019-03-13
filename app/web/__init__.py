@@ -1,13 +1,23 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 '''
 用多蓝图来分文件有点小题大做，蓝图通常用于大型工程分小项目，单个小项目用单蓝图分文件更合适。下面把多个文件导入，并注册到同一蓝图web上
 '''
 
 web = Blueprint('web',__name__)
+
+@web.app_errorhandler(404)
+def not_found(e):
+    '''
+    AOP 面向切面编程, 把所有404异常看成是一个切面, 监听捕获这个切面,并对其处理.
+    此函数通过装饰器,监听任何404异常,自动调用本函数处理. 可在本函数下定制404异常时得行为.
+    :param e:
+    :return:
+    '''
+    return render_template("404.html"), 404
 
 # 不导入则book文件不会被执行，无法完成里面视图函数的在蓝图上的注册
 # 找不到对象,通常是由于没导入或者循环导入的问题.

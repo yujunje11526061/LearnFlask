@@ -3,15 +3,20 @@
 
 from flask import Flask
 from flask_login  import LoginManager
-
 login_manager = LoginManager()
+
+from flask_mail import Mail
+mail = Mail()
 
 from app.web import web
 from app.models.base import db
 
 
-
 def create_app():
+    '''
+    用于创建app实例,并随之注册相应的蓝图和插件
+    :return:
+    '''
     app = Flask(__name__)
     #__nama__变量代表了应用程序所在位置，相应的属于该应用实例的静态文件与模板文件都应该放在其根目录(默认根目录，可在实例化app时配置关键字参数指定位置。
     # 注册蓝图时也可以配置属于蓝图的文件下的位置，
@@ -42,9 +47,13 @@ def create_app():
     # db.app=app
     # db.create_all()
 
+    # 注册用户管理插件
     login_manager.init_app(app)
     login_manager.login_view = "web.login" # 把登陆页面的endpoint赋值过去，用于访问权限审核不通过时重定向到登陆页面
     login_manager.login_message = "请先登陆"
+
+    # 注册邮件管理插件
+    mail.init_app(app)
 
     return app
 

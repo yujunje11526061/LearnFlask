@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+from flask import current_app
 from sqlalchemy import Column, Integer, String, Boolean, Float
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
 from app import login_manager
-from app.models.base import Base
+from app.models.base import Base, db
 from app.models.gift import Gift
 from app.models.wish import Wish
 from yushubook import YushuBook
@@ -46,6 +48,31 @@ class User(Base, UserMixin):
         :return:
         '''
         self._password = generate_password_hash(raw_password)
+
+    def generate_token(self, expiredTime = 600):
+        # 用itsdangerous库生成token
+        # 用密钥生成一个序列化器
+        s = Serializer(current_app.config["SECRET_KEY"], expiredTime)
+        # 把相关信息组成的字典加密序列化得到token, 得到的是字节码(ASCII码也是utf-8的一部分).用utf-8解码
+        token = s.dumps({"id":self.id}).decode("utf-8")
+        return token
+
+    @classmethod
+    def reset_password(cls,token, newPassword):
+        s = Serializer(current_app.config["SECRET_KEY"])
+        try:
+            id = s.loads(token.encode("utf-8")).get("id")
+        except: # token过期或者是篡改的,则itsdangerous库会抛出异常
+            return False
+        with db.auto_commit():
+            user = cls.query.get(id) # 主键查询可以直接用get
+            if user:
+                user.password = newPassword
+            else:
+                return False
+        return True
+
+
 
     def check_password(self,raw_password:str):
         return check_password_hash(self.password, raw_password)

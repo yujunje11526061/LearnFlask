@@ -2,16 +2,18 @@
 # -*- coding:utf-8 -*-
 
 from wtforms import Form, StringField, PasswordField, ValidationError
-from wtforms.validators import Length, NumberRange, DataRequired, Email
+from wtforms.validators import Length, NumberRange, DataRequired, Email, EqualTo
 
 from app.models.user import User
 
-class loginForm(Form):
+class LoginForm(Form):
     email = StringField(validators=[DataRequired(), Length(8, 64), Email(message="电子邮箱不符合规范")])
     password = StringField(validators=[DataRequired(message="密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符")])
 
+class EmailForm(Form):
+    email = StringField(validators=[DataRequired(), Length(8, 64), Email(message="电子邮箱不符合规范")])
 
-class RegisterForm(loginForm):
+class RegisterForm(LoginForm):
     '''
     其实例，比如form = RegisterForm()，通过form.data获取字典
     {字段名:字段值}
@@ -40,3 +42,7 @@ class RegisterForm(loginForm):
     def validate_nickname(self, field):
         if User.query.filter_by(nickname=field.data).first():
             raise ValidationError("此昵称已被占用")
+
+class ResetPasswordForm(Form):
+    password1 = StringField(validators=[DataRequired(message="密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符")])
+    password2 = StringField(validators=[DataRequired(message="密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符"), EqualTo("password1",message="两次输入的密码不一致")])

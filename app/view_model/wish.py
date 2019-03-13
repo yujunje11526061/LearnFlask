@@ -4,6 +4,9 @@ from app.view_model.book import BookViewModel
 
 
 class MyWishes():
+    '''
+    和MyGifts类可以封装成一个类.
+    '''
 
     def __init__(self, my_wishes_list, gift_count_list):
         self.__my_wishes_list = my_wishes_list

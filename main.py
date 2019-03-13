@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # 仅供测试
     @app.route('/')
     def hello():
-        return 'Hello World 啊哈哈'  # return时flask会自动封装成一个response对象。
+        return 'Hello World 啊哈哈'  # return时还可以返回文本, 状态码二元组, flask会自动封装成一个response对象。
 
     @app.route('/test')
     def test():
