@@ -1,10 +1,11 @@
-from flask import url_for, flash, current_app
+from flask import url_for, flash,  render_template
 from flask_login import current_user, login_required
 from werkzeug.utils import redirect
 
 from app.models.base import db
 from app.models.gift import Gift
 from app.models.wish import Wish
+from app.view_model.wish import MyWishes
 from . import web
 
 
@@ -13,7 +14,11 @@ from . import web
 @web.route('/my/wish')
 @login_required
 def my_wish():
-    pass
+    my_wishes_list = Wish.get_user_wishes(current_user.id)
+    isbn_list = [wish.isbn for wish in my_wishes_list]
+    gift_count_list = Gift.get_all_gifts(isbn_list)
+    view_model_of_my_wishes = MyWishes(my_wishes_list=my_wishes_list, gift_count_list=gift_count_list)
+    return render_template("my_wishes.html", wishes=view_model_of_my_wishes.wishes)
 
 
 @web.route('/wish/book/<isbn>')

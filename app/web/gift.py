@@ -1,5 +1,4 @@
 from flask import current_app, flash, redirect, url_for, render_template
-from sqlalchemy import desc
 
 from app.models.base import db
 from app.models.gift import Gift

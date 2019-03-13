@@ -3,11 +3,12 @@
 
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from sqlalchemy import Column, Integer, String, Boolean, Float, ForeignKey, SmallInteger, func
+from sqlalchemy import Column, Integer, String, Boolean, Float, ForeignKey, SmallInteger, func, desc
 from sqlalchemy.orm import relationship
 
 from app.models.base import db
 from app.models.base import Base
+from yushubook import YushuBook
 
 
 class Wish(Base):
@@ -20,6 +21,15 @@ class Wish(Base):
     isbn = Column(String(15), nullable=False)
     acquired = Column(Boolean, default=False) # False代表还未收到
 
+    @property
+    def book(self):
+        '''
+        :return:礼物所对应的书籍信息
+        '''
+        yushu_book = YushuBook()
+        yushu_book.search_by_isbn(self.isbn)
+        return yushu_book.first
+
     @classmethod
     def get_all_wishes(cls, isbn_list):
         '''
@@ -31,7 +41,7 @@ class Wish(Base):
         :return: 一组数量, dict(isbn=isbn,数量=数量)构成的列表
         '''
         # SELECT COUNT(id), isbn
-        # FROM
+        # FROM wish
         # WHERE acquired=0 AND isbn IN isbn_list AND status = 1
         # GROUP BY isbn;
         count_list = db.session.query(func.count(cls.id), cls.isbn).\
@@ -39,3 +49,7 @@ class Wish(Base):
                         group_by(cls.isbn).all()
         # count_list是一个二元祖组成的列表, 返回元祖列表需要调用方了解细节,不友好,故转化成字典列表,也可以用namedtuple
         return [dict(count=count, isbn= isbn) for count, isbn in count_list]
+
+    @classmethod
+    def get_user_wishes(cls, uid):
+        return cls.query.filter_by(uid=uid, acquired=False).order_by(desc(cls.create_time)).all()
