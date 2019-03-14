@@ -1,9 +1,11 @@
 from flask import current_app, flash, redirect, url_for, render_template
 
 from app.models.base import db
+from app.models.drift import Drift
 from app.models.gift import Gift
 from app.models.wish import Wish
 from app.view_model.gift import MyGifts
+from utils import PendingStatus
 from . import web
 from flask_login import login_required, current_user
 
@@ -36,9 +38,19 @@ def save_to_gifts(isbn):
     return redirect(url_for("web.book_detail", isbn = isbn))
 
 
-@web.route('/gifts/<gid>/redraw')
+@web.route('/gifts/<int:gid>/redraw')
+@login_required
 def redraw_from_gifts(gid):
-    pass
+    gift = Gift.query.filter_by(id=gid, launched=False).first_or_404()
+    if gift.uid != current_user.id:
+        flash("警告,禁止超权访问")
+    elif Drift.query.filter_by(gift_id = gid, pending=PendingStatus.Waiting).first():
+        flash("请先处理该本书的交易请求")
+    else:
+        with db.auto_commit():
+            current_user.beans -= current_app.config["BEAN_GIVEN_BY_SYSTEM_PER_BOOK"]
+            gift.delete()
+    return redirect(url_for("web.my_gifts"))
 
 
 

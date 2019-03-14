@@ -65,3 +65,6 @@ class Base(db.Model):
     @property
     def create_datetime(self):
         return datetime.datetime.fromtimestamp(self.create_time)
+
+    def delete(self):
+        self.status = 0

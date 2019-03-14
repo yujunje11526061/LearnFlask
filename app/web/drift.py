@@ -6,9 +6,11 @@ from app.models.base import db
 from app.forms.book import DriftForm
 from app.models.drift import Drift
 from app.models.gift import Gift
+from app.models.user import User
+from app.models.wish import Wish
 from app.view_model.book import BookViewModel
 from app.view_model.drift import DriftCollection
-from utils import send_mail
+from utils import send_mail, PendingStatus
 from . import web
 
 
@@ -40,7 +42,9 @@ def send_drift(gid):
 @web.route('/pending')
 @login_required
 def pending():
-    # 带有逻辑表达式的查询用filter, filter_by只能是默认的and
+    # 带有复杂逻辑表达式的查询用filter, filter_by只能是默认的and.
+    # filter需写完整的逻辑, 如类变量的使用和取用及==号, 因为他写的是逻辑表达式.
+    # filter_by则是传参的形式.
     drifts = Drift.query.filter(or_(Drift.requester_id==current_user.id, Drift.gifter_id==current_user.id)).order_by(desc(Drift.create_time)).all()
 
     views = DriftCollection(drifts, current_user.id)
@@ -49,19 +53,57 @@ def pending():
 
 
 
-@web.route('/drift/<int:did>/reject')
+@web.route('/drift/<int:did>/reject') # 注意url规则中的类型转换, 这里不写则得到的是字符串
+@login_required
 def reject_drift(did):
-    pass
+    drift = Drift.query.get_or_404(did)
+    if drift.gifter_id != current_user.id:
+        flash("警告,禁止超权访问")
+    else:
+        with db.auto_commit():
+            drift.pending = PendingStatus.Reject
+            requester = User.query.get_or_404(drift.requester_id)
+            requester.beans += 1
+    return redirect(url_for("web.pending"))
 
 
 @web.route('/drift/<int:did>/redraw')
+@login_required
 def redraw_drift(did):
-    pass
+    '''
+    超权问题, 用户修改url来操作别人的鱼漂
+    :param did:
+    :return:
+    '''
+    drift = Drift.query.get_or_404(did)
+    if drift.requester_id != current_user.id:
+        flash("警告,禁止超权访问")
+    else:
+        with db.auto_commit():
+            drift.pending = PendingStatus.Redraw
+            current_user.beans += 1
+    return redirect(url_for("web.pending"))
 
 
 @web.route('/drift/<int:did>/mailed')
+@login_required
 def mailed_drift(did):
-    pass
+    drift =Drift.query.get_or_404(did)
+    if drift.gifter_id != current_user.id:
+        flash("警告,禁止超权访问")
+    else:
+        with db.auto_commit():
+            drift.pending = PendingStatus.Success
+            current_user.beans += 1
+            current_user.send_counter += 1
+            requester = User.query.get_or_404(drift.requester_id)
+            requester.receive_counter += 1
+            gift = Gift.query.get_or_404(drift.gift_id)
+            gift.launched = True
+            # 另一种更新的写法
+            Wish.query.filter_by(uid = drift.requester_id, acquired = False, isbn = drift.isbn).update({Wish.acquired:True})
+
+    return redirect(url_for("web.pending"))
 
 def save_drift(drift_form, current_gift):
     with db.auto_commit():

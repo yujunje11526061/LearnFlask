@@ -149,5 +149,5 @@ class User(Base, UserMixin):
 
 @login_manager.user_loader
 def get_user(uid):
-    # 根据主键获得user对象，不需要filter_by
+    # 根据主键id获得user对象，get写比较方便. 必须是整数
     return User.query.get(int(uid))
