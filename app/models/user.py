@@ -8,8 +8,10 @@ from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
 from app import login_manager
 from app.models.base import Base, db
+from app.models.drift import Drift
 from app.models.gift import Gift
 from app.models.wish import Wish
+from utils import PendingStatus
 from yushubook import YushuBook
 
 
@@ -19,6 +21,9 @@ class User(Base, UserMixin):
     UserMixin类来自flask_login插件，该插件用于管理用户登录(如设置cookie，视图函数访问权限控制)。
     login_user函数调用user对象的get_id方法来设置cookie，具体方法定义在UserMixin类中，自动取用id属性(主键)。继承该类可以不用自己写该插件所必需的一些方法。
     倘若我们不叫id叫idx，则需要覆写get_id方法。
+
+    相关业务逻辑都通过方法写在模型层, 控制层(视图函数)中只写对方法的调用来实现业务逻辑,实现对逻辑细节的封装
+    方法名字应能看出业务内容,使得调用方代码能清洗明了.
     '''
     # __tablename__ = "user1"
     id = Column(Integer, primary_key=True)
@@ -72,10 +77,25 @@ class User(Base, UserMixin):
                 return False
         return True
 
+    def change_password(self,  newPassword):
+        with db.auto_commit():
+            # 数据库的改操作,可以直接改了提交. 插入才需要add进会话
+            self.password = newPassword
+        return True
+
 
 
     def check_password(self,raw_password:str):
         return check_password_hash(self.password, raw_password)
+
+    @property
+    def baseInfo(self):
+        return dict(
+            nickname = self.nickname,
+            send_receive = str(self.send_counter)+"/"+str(self.receive_counter),
+            beans =  self.beans,
+            email = self.email,
+        )
 
     def can_save_to_gift_list(self, isbn):
         yushu_book = YushuBook()
@@ -108,6 +128,23 @@ class User(Base, UserMixin):
             return True
         else:
             return False
+
+    def can_send_drift(self):
+        if self.beans<1:
+            return False
+        success_gifts_count = Gift.query.filter_by(id=self.id, launched = True).count()
+        success_drifts_count = Drift.query.filter_by(requester_id=self.id, pending = PendingStatus.Success).count()
+        return success_drifts_count//2 <= success_gifts_count
+
+    @property
+    def summary(self):
+        return dict(
+            nickname = self.nickname,
+            beans = self.beans,
+            email = self.email,
+            send_receive = str(self.send_counter)+ "/" + str(self.receive_counter)
+        )
+
 
 
 @login_manager.user_loader

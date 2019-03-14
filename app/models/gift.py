@@ -64,3 +64,5 @@ class Gift(Base):
     def get_user_gifts(cls,uid):
         return cls.query.filter_by(uid = uid, launched = False).order_by(desc(cls.create_time)).all()
 
+    def is_own_gift(self, uid):
+        return self.uid == uid

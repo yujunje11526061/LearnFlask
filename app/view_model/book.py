@@ -5,7 +5,9 @@ from yushubook import YushuBook
 
 class BookViewModel():
     '''
-    定义单本书所需要的字段
+    设计理念:
+    定义单本书所需要的字段,把单本书拎出来处理,可以对其添加相应方法, 相比于直接在书籍集合类中以字典代表单本书,更易扩展.
+    实例属性全部列出来也一目了然容易阅读.
     '''
     def __init__(self, book:dict):
         self.title = book.get("title", 0)

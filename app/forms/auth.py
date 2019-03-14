@@ -44,5 +44,8 @@ class RegisterForm(LoginForm):
             raise ValidationError("此昵称已被占用")
 
 class ResetPasswordForm(Form):
-    password1 = StringField(validators=[DataRequired(message="密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符")])
-    password2 = StringField(validators=[DataRequired(message="密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符"), EqualTo("password1",message="两次输入的密码不一致")])
+    password1 = StringField(validators=[DataRequired(message="新密码密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符")])
+    password2 = StringField(validators=[DataRequired(message="重复新密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符"), EqualTo("password1",message="两次输入的密码不一致")])
+
+class ChangePasswordForm(ResetPasswordForm):
+    oldPassword = StringField(validators=[DataRequired(message="旧密码不能为空"), Length(6, 32, message="密码长度需为6~32个字符")])

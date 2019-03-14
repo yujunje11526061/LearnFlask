@@ -23,7 +23,7 @@ class SQLAlchemy(_SQLAlchemy):
             self.session.commit()
         except Exception as e:
             self.session.rollback()
-            raise e
+            # raise e
 
 
 class Query(BaseQuery):
