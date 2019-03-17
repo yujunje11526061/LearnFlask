@@ -27,7 +27,7 @@ def send_mail(to, subject, template, **kwargs):
             )
     msg.html = render_template(template, **kwargs)
 
-    # 因为flask的线程隔离机制,新线程因获得真实的app对象,用如下方法
+    # 因为flask的线程隔离机制,新线程应获得真实的app对象,用如下方法
     app = current_app._get_current_object()
     thread = Thread(target=async_send_mail, args=[msg,app])
     thread.start()

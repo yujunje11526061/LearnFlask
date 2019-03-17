@@ -34,7 +34,8 @@ class Wish(Base):
     def get_all_wishes(cls, isbn_list):
         '''
         根据传入的一组isbn,查询wish表中,每个isbn对应的记录数量
-        利用session来查询, filter语句相比filter_by语句更灵活, 写的是条件表达式,而filter_by写的是关键字参数
+        除了利用模型类的query来查询，还能利用db.session来查询，相当于一个有FROM字段一个没有。
+        filter语句相比filter_by语句更灵活, 写的是条件表达式,而filter_by写的是关键字参数
         利用mysql 的 in 功能
         利用func.count (sqlalchemy库的func对象封装了MySQL的汇总函数) 和group_by结合进行分组统计
         :param isbn_list:

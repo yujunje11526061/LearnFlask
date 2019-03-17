@@ -36,7 +36,9 @@ class Query(BaseQuery):
         '''
         if "status" not in kwargs:
             kwargs["status"] = 1
-        return super().filter_by(**kwargs)
+        # return super().filter_by(**kwargs)
+        # 根据mro（基于拓扑排序）顺序搜索有此方法的父类。写起来方便，但不利于阅读，因为多重继承和继承链的存在，不知道到底是哪个。最好用调用非绑定父类的明确写法。
+        return BaseQuery.filter_by(self, **kwargs)
 
 db = SQLAlchemy(query_class=Query)
 

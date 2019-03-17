@@ -19,7 +19,8 @@ class User(Base, UserMixin):
     '''
     Base基类中定义了模型类的通用方法
     UserMixin类来自flask_login插件，该插件用于管理用户登录(如设置cookie，视图函数访问权限控制)。
-    login_user函数调用user对象的get_id方法来设置cookie，具体方法定义在UserMixin类中，自动取用id属性(主键)。继承该类可以不用自己写该插件所必需的一些方法。
+    login_user函数调用user对象的get_id方法来设置cookie，具体方法定义在UserMixin类中，自动取用id属性(主键)。
+    继承该类可以不用自己写该插件所必需的一些方法。
     倘若我们不叫id叫idx，则需要覆写get_id方法。
 
     相关业务逻辑都通过方法写在模型层, 控制层(视图函数)中只写对方法的调用来实现业务逻辑,实现对逻辑细节的封装

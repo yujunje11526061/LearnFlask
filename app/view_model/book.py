@@ -38,7 +38,7 @@ class BookCollection():
 
     def fill(self,yushu_book:YushuBook,keyword:str):
         '''
-        此方法用于讲API中获取的原始数据进行清洗整合
+        此方法用于将API中获取的原始数据进行清洗整合
         :param yushu_book:该对象封装了从API获取的原始数据
         :param key:
         :return:
