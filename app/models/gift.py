@@ -55,7 +55,7 @@ class Gift(Base):
         # FROM gift
         # WHERE acquired=0 AND isbn IN isbn_list AND status = 1
         # GROUP BY isbn;
-        count_list = Gift.query(func.count(cls.id), cls.isbn).\
+        count_list = db.session.query(func.count(cls.id), cls.isbn).\
                         filter(cls.launched==False,cls.isbn.in_(isbn_list), cls.status==1).\
                         group_by(cls.isbn).all()
         # count_list是一个二元祖组成的列表, 返回元祖列表需要调用方了解细节,不友好,故转化成字典列表,也可以用namedtuple
